@@ -39,7 +39,7 @@ public class TestCompute {
   }
 
   @Test
-  public void testStringInYheQueue() {
+  public void testStringInTheQueue() {
     MessageQueue mq = mock(MessageQueue.class);
     when(mq.size()).thenReturn(3);
     when(mq.contains("string")).thenReturn(true);
