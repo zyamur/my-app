@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestCompute" time="0.125" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestCompute" time="0.146" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="TR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\ZYAMUR\AppData\Local\Temp\surefire7430830736398744455\surefirebooter-20240326111625514_3.jar C:\Users\ZYAMUR\AppData\Local\Temp\surefire7430830736398744455 2024-03-26T11-16-25_076-jvmRun1 surefire-20240326111625514_1tmp surefire_0-20240326111625514_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ZYAMUR\AppData\Local\Temp\surefire4743459815219954255\surefirebooter-20240326122029625_3.jar C:\Users\ZYAMUR\AppData\Local\Temp\surefire4743459815219954255 2024-03-26T12-20-29_447-jvmRun1 surefire-20240326122029625_1tmp surefire_0-20240326122029625_2tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\ZYAMUR\Downloads\branchCoverage\branchCoverage\my-app\target\test-classes;C:\Users\ZYAMUR\Downloads\branchCoverage\branchCoverage\my-app\target\classes;C:\Users\ZYAMUR\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\ZYAMUR\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ZYAMUR\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ZYAMUR"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\ZYAMUR\AppData\Local\Temp\surefire7430830736398744455\surefirebooter-20240326111625514_3.jar;C:\\Users\\ZYAMUR\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.7.6.201602180812\\org.jacoco.agent-0.7.6.201602180812-runtime.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ZYAMUR\AppData\Local\Temp\surefire4743459815219954255\surefirebooter-20240326122029625_3.jar;C:\\Users\\ZYAMUR\\.m2\\repository\\org\\jacoco\\org.jacoco.agent\\0.7.6.201602180812\\org.jacoco.agent-0.7.6.201602180812-runtime.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_171\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,6 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="example" classname="TestCompute" time="0.105"/>
-  <testcase name="testCountNumberOfOccurrences_WhenQueueIsEmpty" classname="TestCompute" time="0.011"/>
+  <testcase name="testElementNotInQueue" classname="TestCompute" time="0.127"/>
+  <testcase name="testEmptyQueue" classname="TestCompute" time="0.0"/>
+  <testcase name="example" classname="TestCompute" time="0.0"/>
+  <testcase name="testElementInQueueButNotEqualToGivenElement" classname="TestCompute" time="0.002"/>
+  <testcase name="testCountNumberOfOccurrences_ElementInQueue" classname="TestCompute" time="0.0"/>
 </testsuite>
