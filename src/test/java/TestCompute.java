@@ -25,7 +25,7 @@ public class TestCompute {
   }
 
   @Test
-  public void testElementNotInQueue() {
+  public void testStringNotInTheQueue() {
     MessageQueue mq = mock(MessageQueue.class);
 
     when(mq.size()).thenReturn(3);
@@ -33,35 +33,37 @@ public class TestCompute {
 
     c = new Compute(mq);
 
-    int result = c.countNumberOfOccurrences("element");
+    int result = c.countNumberOfOccurrences("string");
 
     assertEquals(0, result);
   }
 
   @Test
-  public void testCountNumberOfOccurrences_ElementInQueue() {
+  public void testStringInYheQueue() {
     MessageQueue mq = mock(MessageQueue.class);
     when(mq.size()).thenReturn(3);
-    when(mq.contains("element")).thenReturn(true);
-    when(mq.getAt(anyInt())).thenReturn("element"); // Assuming all elements are "element"
+    when(mq.contains("string")).thenReturn(true);
+    when(mq.getAt(anyInt())).thenReturn("string");
 
     c = new Compute(mq);
 
-    int result = c.countNumberOfOccurrences("element");
+    int result = c.countNumberOfOccurrences("string");
 
     assertEquals(3, result);
   }
 
+
   @Test
-  public void testElementInQueueButNotEqualToGivenElement() {
+  public void testStringInTheQueueNotEqualToGivenString() {
+    //we are writing this test in order to cover all branches
     MessageQueue mq = mock(MessageQueue.class);
     when(mq.size()).thenReturn(3);
-    when(mq.contains("element")).thenReturn(true);
-    when(mq.getAt(anyInt())).thenReturn("differentElement"); // Assuming elements are not all "element"
+    when(mq.contains("string")).thenReturn(true);
+    when(mq.getAt(anyInt())).thenReturn("differentstrings");
 
     c = new Compute(mq);
 
-    int result = c.countNumberOfOccurrences("element");
+    int result = c.countNumberOfOccurrences("string");
 
     assertEquals(0, result);
   }
